@@ -26,8 +26,7 @@ public  class  TestRandom {
 			if (lessThanOrEqualToHalf != 0) {
 				double ratio = (double) greaterThanHalf / lessThanOrEqualToHalf;
 				System.out.println("Ratio: " + ratio);
-			} else {
-				System.out.println("ratio: undefined (division by zero)");
+			
 			}
 			
 
