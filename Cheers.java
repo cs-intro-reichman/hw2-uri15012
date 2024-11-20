@@ -1,17 +1,17 @@
 // Prints a crowd cheering output.
 public class Cheers {
         public static void main(String[] args) {
-	  String word = args[0];
-          int number = Integer.parseInt(args[1]);
+	  String word = args[0]; // eh oq eu recebo do usuario 
+          int number = Integer.parseInt(args[1]); // recebo do usuario 
 
           word = word.toUpperCase();
-          String specialCases = "AEFHILMNORSX";
-          String AN = "";
+          String specialCases = "AEFHILMNORSX"; // isso eh dado 
+          String AN = ""; // so criei uma string p poder usar
 
-                // pegar tamanho da palavra
+                // iterate over each chracter in the input word 
           for (int i = 0; i < word.length(); i++) {
-                for (int j = 0; j < specialCases.length(); j++) {
-                        if (word.charAt(i) == specialCases.charAt(j)) { // ve uma por uma
+                for (int j = 0; j < specialCases.length(); j++) { // check the special case 
+                        if (word.charAt(i) == specialCases.charAt(j)) { // analisa se uma eh igual a outra
                                 AN = "an ";
                                 break;
                                 } else {
@@ -23,7 +23,7 @@ public class Cheers {
                                 System.out.println("Give me " + AN + word.charAt(i) + ": " + word.charAt (i) + "!");
                         
                 }
-                        System.out.println("what does that spell?");
+                        System.out.println("What does that spell?");
                 
 
                   for (int k = 0; k < number; k++) { // essa faz com que as palavras se repitam no final
