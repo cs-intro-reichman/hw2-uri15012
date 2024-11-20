@@ -6,19 +6,22 @@ public class Cheers {
 
           word = word.toUpperCase();
           String specialCases = "AEFHILMNORSX";
-          String AN;
+          String AN = "";
 
                 // pegar tamanho da palavra
           for (int i = 0; i < word.length(); i++) {
                 for (int j = 0; j < specialCases.length(); j++) {
                         if (word.charAt(i) == specialCases.charAt(j)) { // ve uma por uma
-                                AN = "an";
+                                AN = "an ";
                                 break;
                                 } else {
-                                AN = "a";      
+                                AN = "a  ";      
                                 }
-                                System.out.println("Give me " + AN + word.charAt(i) + ":" + word.charAt (i) + "!");
                         }
+
+                        
+                                System.out.println("Give me " + AN + word.charAt(i) + ": " + word.charAt (i) + "!");
+                        
                 }
                         System.out.println("what does that spell?");
                 
@@ -28,7 +31,7 @@ public class Cheers {
                         }
                 
 
-        }
+                }
 }
                 
                 
