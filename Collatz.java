@@ -5,7 +5,7 @@ public class Collatz {
 		String mode = args[1];
 		int n = 0;
 		int counter = 1;
-			for (int i = 0; i < N + 1; i++){
+			for (int i = 1; i < N + 1; i++){
 				counter = 1;
 				n = i;
 				String line = String.valueOf (n) +" ";
@@ -26,7 +26,7 @@ public class Collatz {
 							line = line + ((String.valueOf(n) + " "));
 						}
 						counter++;}
-						if (mode.equals("V"))
+						if (mode.equals("v"))
 						{
 							line = line + ("(" + counter +")");
 							System.out.println(line);
