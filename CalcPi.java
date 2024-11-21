@@ -10,8 +10,8 @@ public class CalcPi {
 			 sum = sum + term;
 		}
 		double piApproximation = 4*sum;
-		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, approximated: " + piApproximation);
+		System.out.println("pi according to Java: %.15f%n" + Math.PI);
+		System.out.println("pi according to Java: %.15f%n" + piApproximation);
 
 
 	}
